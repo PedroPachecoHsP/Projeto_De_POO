@@ -1,5 +1,22 @@
 # Projeto de POO da matéria da faculdade: um sistema bancário em Python com banco de dados.
 
+
+# Explicação do código
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # CÓDIGO COMEÇA A PARTIR DESTE PONTO!!!!
 
 import tkinter as tk
