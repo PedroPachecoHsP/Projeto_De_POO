@@ -47,7 +47,7 @@
 <ul>-<strong>excluir_cliente</strong>: remove tudo com confirmação.</ul>
 <ul>-<strong>mostrar_todas_contas</strong>: abre nova janela com relatório de contas.</ul>
 
-<h1>O Código Tem Inicio Aqui</h1>
+# O Código Tem Inicio Aqui
 
 import tkinter as tk 
 from tkinter import messagebox, simpledialog 
