@@ -1,27 +1,57 @@
-# Projeto de POO da matéria da faculdade: um sistema bancário em Python com banco de dados.
+<h1>Projeto de POO da matéria da faculdade: um sistema bancário em Python com banco de dados.</h1>
 
+<h1>Explicação do código</h1>
 
-# Explicação do código
+<h4>📂1. Banco de Dados – BancoDeDados</h4>
+<p>Classe responsável por interagir com o SQLite.</p>
 
+<p><strong> __init__</strong>: conecta ao banco e cria tabelas se não existirem.</p>
+<p><strong>Criar_tabelas:</strong><br> Define 3 tabelas:</p>
+    <ul>-<strong>clientes:</strong> armazena nome e CPF.</ul>
+    <ul>-<strong>contas:</strong> liga um número de conta a um cliente.</ul>  
+    <ul>-<strong>extratos:</strong> registra depósitos, saques e suas datas.</ul>
+    
+<p>Métodos como <strong>(inserir_cliente)</strong>, <strong>(cpf_existe)</strong>, <strong>(atualizar_saldo)</strong>, <strong>(registrar_extrato)</strong> cuidam da lógica de dados.</p>
 
+<p><strong>(Excluir_cliente_por_cpf:)</strong> deleta o cliente, suas contas e extratos (com segurança relacional). </p><br>
 
+<h4>👤2. Classes de Dados – Cliente e Conta</h4>
+<p>Usando encapsulamento com <strong>@property.</strong></p>
 
+<p><strong>Cliente:</strong> Guarda <strong>(nome)</strong> e <strong>(cpf)</strong>, com atributos privados <strong>(__nome)</strong> e <strong>(__cpf)</strong>.</p>
+<p>Conta: Guarda</p>
+    <ul>-<strong>Numero</strong>: da conta.</ul>
+    <ul>-<strong>Cliente</strong>: objeto Cliente.</ul>
+    <ul>-<strong>Saldo</strong>: valor atual.</ul>
+    <ul>-<strong>Extrato</strong>: lista de operações.</ul>
+<p><strong>Formatar_extrato</strong>: gera texto com o histórico de transações.</p>
 
+<h4>🏜️ 3. Interface Gráfica – BancoGUI </h4>
+<p>Classe principal da <strong>GUI com Tkinter</strong>.</p>
 
+<p>Cria botões para:</p>
 
+<ul>-Criar cliente/conta.</ul>
+<ul>-Depositar.</ul>
+<ul>-Sacar.</ul>
+<ul>-Ver extrato.</ul>
+<ul>-Excluir cliente.</ul>
+<ul>-Ver todas as contas.</ul>
 
+<p>Métodos importantes:</p>
 
+<ul>-<strong>criar_cliente</strong>: cadastra cliente e cria conta.</ul>
+<ul>-<strong>depositar</strong>: atualiza saldo e grava no extrato.</ul>
+<ul>-<strong>sacar</strong>: verifica saldo e registra saque.</ul>
+<ul>-<strong>ver_extrato</strong>: mostra histórico com saldo atual.</ul>
+<ul>-<strong>excluir_cliente</strong>: remove tudo com confirmação.</ul>
+<ul>-<strong>mostrar_todas_contas</strong>: abre nova janela com relatório de contas.</ul>
 
+<h1>O Código Tem Inicio Aqui</h1>
 
-
-
-
-
-# CÓDIGO COMEÇA A PARTIR DESTE PONTO!!!!
-
-import tkinter as tk
-from tkinter import messagebox, simpledialog
-import sqlite3
+import tkinter as tk 
+from tkinter import messagebox, simpledialog 
+import sqlite3 
 
 # - Banco de Dados -
 class BancoDeDados:
