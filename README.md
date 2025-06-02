@@ -36,7 +36,6 @@
 <ul>-Sacar.</ul>
 <ul>-Ver extrato.</ul>
 <ul>-Excluir cliente.</ul>
-<ul>-Ver todas as contas.</ul>
 
 <p>Métodos importantes:</p>
 
@@ -45,7 +44,7 @@
 <ul>-<strong>sacar</strong>: verifica saldo e registra saque.</ul>
 <ul>-<strong>ver_extrato</strong>: mostra histórico com saldo atual.</ul>
 <ul>-<strong>excluir_cliente</strong>: remove tudo com confirmação.</ul>
-<ul>-<strong>mostrar_todas_contas</strong>: abre nova janela com relatório de contas.</ul>
+
 
 # O Código Tem Inicio Aqui
 
