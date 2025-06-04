@@ -1,5 +1,7 @@
 <h1>Projeto de POO da matéria da faculdade: um sistema bancário em Python com banco de dados.</h1>
 
+<h2> Alunos: Fernando Souza, Guilherme Marques, Pedro Pacheco, Walisson Nóbrega
+
 <h1>Explicação do código</h1>
 
 <h4>📂1. Banco de Dados – BancoDeDados</h4>
